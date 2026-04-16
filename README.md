@@ -1,13 +1,101 @@
-# Setup SSH GitHub
+# 🚀 Setup Git + SSH + GitHub
 
-Este projeto demonstra a configuração de autenticação SSH entre um computador local e o GitHub.
+> Projeto de configuração de ambiente Git com autenticação SSH e versionamento no GitHub.
 
-## Objetivo
-Permitir o envio de commits sem uso de senha, utilizando chave SSH.
+---
 
-## Passos realizados
+## 👩‍💻 Sobre o projeto
 
-1. Geração de chave SSH
-2. Adição no GitHub
-3. Teste de conexão
-4. Commit e push via SSH
+Este projeto tem como objetivo demonstrar a configuração completa do Git e integração com o GitHub utilizando SSH, permitindo autenticação segura e envio de projetos sem necessidade de senha.
+
+---
+
+## 🎯 Objetivos
+
+- Configurar Git no ambiente local
+- Gerar e configurar chave SSH (ed25519)
+- Conectar o computador ao GitHub
+- Criar repositório versionado
+- Realizar commits e push via SSH
+
+---
+
+## ⚙️ Tecnologias utilizadas
+
+- Git
+- Git Bash
+- GitHub
+- SSH (ed25519)
+- Windows
+
+---
+
+## 🔐 Configuração SSH
+
+### Geração da chave
+
+ssh-keygen -t ed25519 -C "email"
+
+### Local da chave
+
+~/.ssh/id_ed25519.pub
+
+### Teste de conexão
+
+ssh -T git@github.com
+
+✔ Resultado: autenticação bem-sucedida
+
+---
+
+## 📁 Criação do projeto
+
+mkdir setup-ssh-github
+cd setup-ssh-github
+git init
+
+---
+
+## 📦 Versionamento com Git
+
+git add .
+git commit -m "ajusta README"
+
+---
+
+## 🌐 Conexão com GitHub (SSH)
+
+git remote add origin git@github.com:DayanadoValle/setup-ssh-github.git
+git branch -M main
+git push -u origin main
+
+---
+
+## 🚀 Resultado final
+
+- SSH configurado com sucesso  
+- GitHub conectado ao ambiente local  
+- Repositório versionado  
+- README publicado  
+- Push realizado com sucesso  
+
+---
+
+## 🧠 Aprendizados
+
+- Configuração de SSH no GitHub  
+- Uso de Git (add, commit, push)  
+- Fluxo de versionamento de código  
+- Integração entre Git local e GitHub remoto  
+
+---
+
+## 🏁 Conclusão
+
+Este projeto consolidou o processo de configuração do ambiente Git e integração com GitHub utilizando SSH, reforçando boas práticas de versionamento e controle de código.
+
+---
+
+## 📌 Autor
+
+Dayana do Valle
