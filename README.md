@@ -29,7 +29,13 @@ Este projeto tem como objetivo demonstrar a configuração completa do Git e int
 - Windows
 
 ---
+## 📚 Referência oficial
 
+Este projeto foi baseado na documentação oficial do GitHub sobre autenticação SSH:
+
+👉 https://docs.github.com/pt/authentication/connecting-to-github-with-ssh
+
+---
 ## 🔐 Configuração SSH
 
 ### Geração da chave
