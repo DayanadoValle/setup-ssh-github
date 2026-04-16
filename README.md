@@ -39,42 +39,46 @@ Este projeto foi baseado na documentação oficial do GitHub sobre autenticaçã
 ## 🔐 Configuração SSH
 
 ### Geração da chave
-
+```bash
 ssh-keygen -t ed25519 -C "email"
-
+```
 ### Local da chave
-
+```bash
 ~/.ssh/id_ed25519.pub
-
+```
 ### Teste de conexão
-
+```bash
 ssh -T git@github.com
-
+```
 ✔ Resultado: autenticação bem-sucedida
 
 ---
 
 ## 📁 Criação do projeto
 
+```bash
 mkdir setup-ssh-github
 cd setup-ssh-github
 git init
-
+```
 ---
 
 ## 📦 Versionamento com Git
 
+```bash
 git add .
-git commit -m "ajusta README"
+git commit -m ""
+```
 
 ---
 
 ## 🌐 Conexão com GitHub (SSH)
 
+```bash
 git remote add origin git@github.com:DayanadoValle/setup-ssh-github.git
 git branch -M main
 git push -u origin main
-
+```
 ---
 
 ## 🚀 Resultado final
